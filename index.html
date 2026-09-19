@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CampusFix - Smart Campus Issue Reporting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">CampusFix</div>
+  <div class="tag">Smart Campus Issue Reporting</div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <h1>Report a campus problem.<br><span>Get it resolved faster.</span></h1>
+      <p>CampusFix helps students report campus issues, automatically classify urgency, and track resolution status from one simple dashboard.</p>
+    </div>
+    <div class="hero-card">
+      <div class="big-number" id="totalIssues">0</div>
+      <div>Total reported issues</div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>Report an Issue</h2>
+      <form id="issueForm">
+        <label>Your name
+          <input id="name" required placeholder="e.g. Rishav">
+        </label>
+        <label>Issue title
+          <input id="title" required placeholder="e.g. Water leakage near block A">
+        </label>
+        <label>Description
+          <textarea id="description" required placeholder="Describe the problem..."></textarea>
+        </label>
+        <label>Location
+          <input id="location" required placeholder="e.g. Block A, 2nd floor">
+        </label>
+        <button type="submit">Submit Issue</button>
+      </form>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Smart Dashboard</h2>
+        <button class="secondary" id="clearBtn">Reset Demo</button>
+      </div>
+      <div id="issues"></div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How CampusFix works</h2>
+    <div class="steps">
+      <div><b>1</b><strong>Report</strong><p>Student submits an issue with location and description.</p></div>
+      <div><b>2</b><strong>Smart triage</strong><p>Keywords estimate category and priority automatically.</p></div>
+      <div><b>3</b><strong>Track</strong><p>Students and administrators can see status and history.</p></div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
